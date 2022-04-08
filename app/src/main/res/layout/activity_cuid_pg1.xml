@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cuidador.CuidPg1">
+
+    <Button
+        android:id="@+id/q3Sim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#87F30A"
+        android:text="SIM"
+        app:layout_constraintBottom_toTopOf="@+id/btnProx"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/q3Nao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#F44336"
+        android:text="NÂO"
+        app:layout_constraintBottom_toTopOf="@+id/btnProx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space" />
+
+    <Button
+        android:id="@+id/q2Sim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#87F30A"
+        android:text="SIM"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/q3Sim"
+        app:layout_constraintStart_toStartOf="@+id/q3Sim" />
+
+    <Button
+        android:id="@+id/q2Nao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#F44336"
+        android:text="NÃO"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/q3Nao"
+        app:layout_constraintStart_toStartOf="@+id/q3Nao" />
+
+    <Button
+        android:id="@+id/q1Sim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#87F30A"
+        android:text="SIM"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/q2Sim"
+        app:layout_constraintStart_toStartOf="@+id/q2Sim" />
+
+    <Button
+        android:id="@+id/q1Nao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#F44336"
+        android:text="NÃO"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/q2Nao"
+        app:layout_constraintStart_toStartOf="@+id/q2Nao" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="1. O paciente está bem hoje?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/q1Sim"
+        app:layout_constraintStart_toStartOf="@+id/q1Sim" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="2. Houve alguma estranheza no comportamento do paciente?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/q2Sim"
+        app:layout_constraintEnd_toEndOf="@+id/q2Nao"
+        app:layout_constraintStart_toStartOf="@+id/q2Sim" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="3. O Paciente teve uma boa noite de sono?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/q3Sim"
+        app:layout_constraintStart_toStartOf="@+id/q3Sim" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cuidado2" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnProx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+    <TextView
+        android:id="@+id/respostaQ1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ainda não respondida"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/q1Nao"
+        app:layout_constraintStart_toStartOf="@+id/q1Sim"
+        app:layout_constraintTop_toBottomOf="@+id/q1Sim" />
+
+    <TextView
+        android:id="@+id/respostaQ2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ainda não respondida"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/q2Nao"
+        app:layout_constraintStart_toStartOf="@+id/q2Sim"
+        app:layout_constraintTop_toBottomOf="@+id/q2Sim" />
+
+    <TextView
+        android:id="@+id/respostaQ3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ainda não respondida"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/q3Nao"
+        app:layout_constraintStart_toStartOf="@+id/q3Sim"
+        app:layout_constraintTop_toBottomOf="@+id/q3Sim" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

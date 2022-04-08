@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Familiar.FamPg1">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnProx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+    <Button
+        android:id="@+id/p1Sim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#87F30A"
+        android:text="SIM"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/p2Sim"
+        app:layout_constraintStart_toStartOf="@+id/p2Sim" />
+
+    <Button
+        android:id="@+id/p1Nao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#F44336"
+        android:text="NÃO"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/p2Nao"
+        app:layout_constraintStart_toStartOf="@+id/p2Nao" />
+
+    <Button
+        android:id="@+id/p2Sim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#87F30A"
+        android:text="SIM"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/p3Sim"
+        app:layout_constraintStart_toStartOf="@+id/p3Sim" />
+
+    <Button
+        android:id="@+id/p2Nao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#F44336"
+        android:text="NÃO"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/p3Nao"
+        app:layout_constraintStart_toStartOf="@+id/p3Nao" />
+
+    <Button
+        android:id="@+id/p3Sim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#87F30A"
+        android:text="SIM"
+        app:layout_constraintBottom_toTopOf="@+id/btnProx"
+        app:layout_constraintEnd_toStartOf="@+id/space2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/p3Nao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#F44336"
+        android:text="NÃO"
+        app:layout_constraintBottom_toTopOf="@+id/btnProx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space2" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="3. O paciente teve uma boa noite de sono?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/p3Sim"
+        app:layout_constraintEnd_toEndOf="@+id/p3Nao"
+        app:layout_constraintStart_toStartOf="@+id/p3Sim" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="2. Caso a resposta à pergunta anterior seja sim, esses eventos de perda de memória ocorrem com frequência?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/p2Sim"
+        app:layout_constraintEnd_toEndOf="@+id/p2Nao"
+        app:layout_constraintStart_toStartOf="@+id/p2Sim" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="1. O paciente apresentou algum sinal de perda de memória hoje?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/p1Sim"
+        app:layout_constraintEnd_toEndOf="@+id/p1Nao"
+        app:layout_constraintStart_toStartOf="@+id/p1Sim" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cuidado2" />
+
+    <TextView
+        android:id="@+id/respostaP1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ainda não respondida"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/p1Nao"
+        app:layout_constraintStart_toStartOf="@+id/p1Sim"
+        app:layout_constraintTop_toBottomOf="@+id/p1Sim" />
+
+    <TextView
+        android:id="@+id/respostaP2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ainda não respondida"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/p2Nao"
+        app:layout_constraintStart_toStartOf="@+id/p2Sim"
+        app:layout_constraintTop_toBottomOf="@+id/p2Sim" />
+
+    <TextView
+        android:id="@+id/respostaP3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ainda não respondida"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/p3Nao"
+        app:layout_constraintStart_toStartOf="@+id/p3Sim"
+        app:layout_constraintTop_toBottomOf="@+id/p3Sim" />
+</androidx.constraintlayout.widget.ConstraintLayout>
