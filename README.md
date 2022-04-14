@@ -8,7 +8,7 @@
 + <b>Douglas Samuel Thomazi Azevedo - 180119109</b><br/>
 + <b>Guilherme Araújo de Oliveira - 190125748</b><br/>
 + <b>Lucas Vinicius Magalhaes - 170061001</b><br/>
-+ <b>Maria Julia Dias Lima - 170151140</b><br/>
++ <b>Maria Júlia Dias Lima - 170151140</b><br/>
 + <b>Moises Felipe Jaco - 190018364</b>
 </details>
 
